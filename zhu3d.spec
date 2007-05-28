@@ -1,7 +1,7 @@
 Summary:	OpenGL-based equation viewer and solver
 Name:		zhu3d
 Version:	2.9.6
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 Group:		Sciences/Mathematics
 Url:		http://kde-apps.org/content/show.php?content=43071
@@ -81,11 +81,9 @@ rm -f %{buildroot}%{_datadir}/apps/%{name}/work/.directory
 %{_datadir}/apps/%{name}/work/textures/*.jpg
 %{_datadir}/apps/%{name}/work/textures/*.txt
 %{_datadir}/apps/%{name}/system/*.zhu
-%{_datadir}/icons/hicolor/64x64/apps/*.png
+%{_iconsdir}/hicolor/64x64/apps/*.png
 %{_datadir}/applications/%{name}.destkop
 %lang(de) %{_datadir}/apps/%{name}/system/languages/%{name}_de.qm
 %lang(es) %{_datadir}/apps/%{name}/system/languages/%{name}_es.qm
 %lang(fr) %{_datadir}/apps/%{name}/system/languages/%{name}_fr.qm
 %lang(zh) %{_datadir}/apps/%{name}/system/languages/%{name}_zh.qm
-
-
