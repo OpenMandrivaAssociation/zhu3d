@@ -1,6 +1,6 @@
 Summary:	OpenGL-based equation viewer and solver
 Name:		zhu3d
-Version:	3.0.4
+Version:	3.0.6
 Release:	%mkrel 1
 License:	GPL
 Group:		Sciences/Mathematics
@@ -30,7 +30,7 @@ export PATH=/usr/lib/qt4/bin:$PATH
 export QTDIR=%{_prefix}/lib/qt4/
 
 %build
-%{_prefix}/lib/qt4/bin/qmake
+%{qt4bin}/qmake
 
 %make
 
