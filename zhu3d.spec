@@ -1,7 +1,7 @@
 Summary:	OpenGL-based equation viewer and solver
 Name:		zhu3d
 Version:	3.1.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Sciences/Mathematics
 Url:		http://kde-apps.org/content/show.php?content=43071
@@ -23,7 +23,7 @@ translating as well as filed lightning or surface properties.
 Special effects are transparency, textures, fog and motion blur.
 
 %prep
-%setup -q %{name}-%{version}
+%setup -q
 %patch0 -p0
 
 export PATH=/usr/lib/qt4/bin:$PATH
@@ -41,7 +41,7 @@ mkdir -p %{buildroot}%{_datadir}/apps/%{name}/{work/textures,system/languages}
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/64x64/apps
 
 install -D %{name} %{buildroot}%{_bindir}/%{name}
-install -D %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.destkop
+install -D %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 install work/*.zhu %{buildroot}%{_datadir}/apps/%{name}/work
 install work/textures/* %{buildroot}%{_datadir}/apps/%{name}/work/textures
 install system/*.zhu %{buildroot}%{_datadir}/apps/%{name}/system
@@ -82,7 +82,7 @@ rm -f %{buildroot}%{_datadir}/apps/%{name}/work/.directory
 %{_datadir}/apps/%{name}/work/textures/*.txt
 %{_datadir}/apps/%{name}/system/*.zhu
 %{_iconsdir}/hicolor/64x64/apps/*.png
-%{_datadir}/applications/%{name}.destkop
+%{_datadir}/applications/%{name}.desktop
 %lang(de) %{_datadir}/apps/%{name}/system/languages/%{name}_de.qm
 %lang(es) %{_datadir}/apps/%{name}/system/languages/%{name}_es.qm
 %lang(fr) %{_datadir}/apps/%{name}/system/languages/%{name}_fr.qm
