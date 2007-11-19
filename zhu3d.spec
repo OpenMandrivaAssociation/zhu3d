@@ -10,7 +10,6 @@ Source1:	%{name}.desktop
 Patch0:		%{name}-2.9.4-path.patch
 BuildRequires:	qt4-devel	>= 4.0
 BuildRequires:	libmesaglu-devel
-BuildRequires:	kdelibs-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
