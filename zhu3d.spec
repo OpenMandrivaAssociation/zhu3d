@@ -7,7 +7,7 @@ Group:		Sciences/Mathematics
 Url:		http://kde-apps.org/content/show.php?content=43071
 Source0:	http://www.kde-apps.org/CONTENT/content-files/43071-%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
-Patch0:		%{name}-2.9.4-path.patch
+Patch0:		%{name}-3.2.9-path.patch
 BuildRequires:	qt4-devel	>= 4.0
 BuildRequires:	libmesaglu-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -23,7 +23,7 @@ Special effects are transparency, textures, fog and motion blur.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch0 -p1
 
 export PATH=/usr/lib/qt4/bin:$PATH
 export QTDIR=%{_prefix}/lib/qt4/
