@@ -1,7 +1,7 @@
 Summary:	OpenGL-based equation viewer and solver
 Name:		zhu3d
 Version:	3.2.9
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Sciences/Mathematics
 Url:		http://kde-apps.org/content/show.php?content=43071
