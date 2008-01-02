@@ -10,6 +10,7 @@ Source1:	%{name}.desktop
 Patch0:		%{name}-3.3.0-path.patch
 BuildRequires:	qt4-devel	>= 4.0
 BuildRequires:	libmesaglu-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 With Zhu3D you interactively can view and animate functions,
