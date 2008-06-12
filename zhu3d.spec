@@ -48,15 +48,19 @@ install system/icons/%{name}.png %{buildroot}%{_datadir}/icons/hicolor/64x64/app
 #useless file
 rm -f %{buildroot}%{_datadir}/apps/%{name}/work/.directory
 
+%if %mdkversion < 200900
 %post
 %{update_menus}
 %{update_desktop_database}
 %update_icon_cache hicolor
+%endif
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
 %{clean_desktop_database}
 %clean_icon_cache hicolor
+%endif
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
