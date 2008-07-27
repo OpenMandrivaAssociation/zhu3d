@@ -1,6 +1,6 @@
 Summary:	OpenGL-based equation viewer and solver
 Name:		zhu3d
-Version:	4.0.8
+Version:	4.1.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sciences/Mathematics
@@ -27,7 +27,7 @@ Special effects are transparency, textures, fog and motion blur.
 
 %build
 %qmake_qt4
-%make CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" LFLAGS="%{ldflags}"
+%make CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" LFLAGS="%{?ldflags}"
 
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
