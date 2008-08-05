@@ -27,7 +27,7 @@ Special effects are transparency, textures, fog and motion blur.
 
 %build
 %qmake_qt4
-%make CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" LFLAGS="%{?ldflags}"
+%make
 
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
