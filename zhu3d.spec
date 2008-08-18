@@ -7,7 +7,7 @@ Group:		Sciences/Mathematics
 Url:		http://kde-apps.org/content/show.php?content=43071
 Source0:	http://ovh.dl.sourceforge.net/sourceforge/zhu3d/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
-Patch0:		%{name}-3.3.0-path.patch
+Patch0:		%{name}-4.1.2-path.patch
 BuildRequires:	qt4-devel	>= 4.0
 BuildRequires:	libmesaglu-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
