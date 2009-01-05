@@ -27,6 +27,10 @@ Special effects are transparency, textures, fog and motion blur.
 
 %build
 %qmake_qt4
+
+#(tpg) fix build
+sed -i -e 's/-DPIC//g' -e 's/-fPIC//g' Makefile
+
 %make
 
 %install
