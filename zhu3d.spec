@@ -26,11 +26,9 @@ Special effects are transparency, textures, fog and motion blur.
 %patch0 -p1
 
 %build
+# setup compile flags is needed so that -fPIC and -DPIC will be overwritten
+%setup_compile_flags
 %qmake_qt4
-
-#(tpg) fix build
-sed -i -e 's/-DPIC//g' -e 's/-fPIC//g' Makefile
-
 %make
 
 %install
