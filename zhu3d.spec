@@ -1,13 +1,13 @@
 Summary:	OpenGL-based equation viewer and solver
 Name:		zhu3d
-Version:	4.1.8
+Version:	4.2.2
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sciences/Mathematics
 Url:		http://kde-apps.org/content/show.php?content=43071
 Source0:	http://ovh.dl.sourceforge.net/sourceforge/zhu3d/%{name}-%{version}.zip
 Source1:	%{name}.desktop
-Patch0:		%{name}-4.1.2-path.patch
+Patch0:		%{name}-4.2.2-path.patch
 BuildRequires:	qt4-devel	>= 4.0
 BuildRequires:	libmesaglu-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -80,6 +80,7 @@ rm -f %{buildroot}%{_datadir}/apps/%{name}/work/.directory
 %{_datadir}/apps/%{name}/system/*.zhu
 %{_iconsdir}/hicolor/64x64/apps/*.png
 %{_datadir}/applications/%{name}.desktop
+%lang(cs) %{_datadir}/apps/%{name}/system/languages/%{name}_cs.qm
 %lang(de) %{_datadir}/apps/%{name}/system/languages/%{name}_de.qm
 %lang(es) %{_datadir}/apps/%{name}/system/languages/%{name}_es.qm
 %lang(fr) %{_datadir}/apps/%{name}/system/languages/%{name}_fr.qm
