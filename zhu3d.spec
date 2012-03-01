@@ -49,7 +49,7 @@ install system/icons/%{name}.png %{buildroot}%{_datadir}/icons/hicolor/64x64/app
 #useless file
 rm -f %{buildroot}%{_datadir}/apps/%{name}/work/.directory
 
-%if %{mdvversion} >= 201200
+%if %{mdvver} >= 201200
 %find_lang %{name} --with-qt
 %else
 echo > %{name}.lang
@@ -70,7 +70,7 @@ echo > %{name}.lang
 %{_datadir}/%{name}/system/*.zhu
 %{_iconsdir}/hicolor/64x64/apps/*.png
 %{_datadir}/applications/%{name}.desktop
-%if %{mdvversion} <= 201100
+%if %{mdvver} <= 201100
 %lang(cs) %{_datadir}/zhu3d/system/languages/zhu3d_cs.qm
 %lang(de) %{_datadir}/zhu3d/system/languages/zhu3d_de.qm
 %lang(es) %{_datadir}/zhu3d/system/languages/zhu3d_es.qm
