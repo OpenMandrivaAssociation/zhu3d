@@ -1,0 +1,12 @@
+Index: zhu3d-4.2.4/zhu3d.pro
+===================================================================
+--- zhu3d-4.2.4.orig/zhu3d.pro
++++ zhu3d-4.2.4/zhu3d.pro
+@@ -215,6 +215,7 @@ RC_FILE   = ./src/winicon.rc
+ win32 { LIBS += -lwinmm }
+ 
+ 
++unix { LIBS *= -lGLU }
+ # ============================================================================
+ # The last section sets specific paths and therefore is interesting only for
+ # debugging or when you edited zhu3d.pri for packaging/tailoring purposes.
