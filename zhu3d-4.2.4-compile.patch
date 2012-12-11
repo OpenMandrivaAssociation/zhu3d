@@ -1,0 +1,11 @@
+--- zhu3d-4.2.4/src/property.h.bero	2012-12-04 22:31:27.189777275 +0100
++++ zhu3d-4.2.4/src/property.h	2012-12-04 22:31:54.122999112 +0100
+@@ -37,6 +37,8 @@
+ /** A clean and safe version of free() */
+ #define FREE(pt) { if(pt!=NULL) { free(pt); pt=NULL; } }
+ 
++#undef PIC
++
+ 
+ /** Type-definitions for clarity */
+ typedef float RGBA[4];    // Red,green,blue,alpha

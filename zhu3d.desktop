@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Zhu3D
+Exec=zhu3d
+Icon=zhu3d
+Categories=Science;ComputerScience;
+Comment=OpenGL-based function-viewer and solver
+Terminal=false
+Type=Application
+StartupNotify=true
