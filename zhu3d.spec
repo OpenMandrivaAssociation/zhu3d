@@ -25,7 +25,7 @@ Special effects are transparency, textures, fog and motion blur.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 dos2unix readme.txt
 
 %build
