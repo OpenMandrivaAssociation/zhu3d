@@ -4,7 +4,7 @@ Version:	4.2.4
 Release:	3
 License:	GPLv2+
 Group:		Sciences/Mathematics
-Url:		http://kde-apps.org/content/show.php?content=43071
+Url:		https://kde-apps.org/content/show.php?content=43071
 Source0:	http://switch.dl.sourceforge.net/project/zhu3d/zhu3d/zhu3d-%version.tar.gz
 Source1:	%{name}.desktop
 Patch0:		zhu3d-4.2.4-paths.patch
