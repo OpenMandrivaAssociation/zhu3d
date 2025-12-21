@@ -10,6 +10,7 @@ Source1:	%{name}.desktop
 Patch0:		zhu3d-4.2.4-paths.patch
 Patch1:		zhu3d-4.2.4-mdv-linkage.patch
 Patch2:		zhu3d-4.2.4-compile.patch
+BuildRequires:	make
 BuildRequires:	qt4-devel
 BuildRequires:	mesaglu-devel
 BuildRequires:	dos2unix
